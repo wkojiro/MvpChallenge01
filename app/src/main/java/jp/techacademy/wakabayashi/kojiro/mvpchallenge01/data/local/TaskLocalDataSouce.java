@@ -16,14 +16,14 @@ import jp.techacademy.wakabayashi.kojiro.mvpchallenge01.data.Task;
 
 public class TaskLocalDataSouce {
 
-    static Task mTask;
-    static String title;
-    static String description;
+    private Task mTask;
+    private String title;
+    private String description;
 
     public void addTask(String title,String description){
 
         Log.d("debug","addtask");
-        /*
+
         Realm realm = Realm.getDefaultInstance();
         realm.beginTransaction();
 
@@ -40,9 +40,11 @@ public class TaskLocalDataSouce {
         mTask.setId(identifier);
         mTask.setTitle(title);
         mTask.setDescription(description);
-*/
 
+        realm.copyToRealmOrUpdate(mTask);
+        realm.commitTransaction();
 
+        realm.close();
 
     }
 

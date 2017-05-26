@@ -13,7 +13,7 @@ public class Task extends RealmObject implements Serializable{
 
 
     @PrimaryKey
-    private int mId;
+    private int id;
     private String mTitle;
     private String mDescription;
 
@@ -21,11 +21,11 @@ public class Task extends RealmObject implements Serializable{
 
 
     public int getId() {
-        return mId;
+        return id;
     }
 
     public void setId(int id) {
-        this.mId = id;
+        this.id = id;
     }
 
     public String getTitle(){

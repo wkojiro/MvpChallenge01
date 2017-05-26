@@ -81,16 +81,16 @@ public class TaskActivity extends AppCompatActivity {
 
 
         Log.d("リロード","リロード");
-        //ArrayList<Task> taskArrayList = new ArrayList<>();
+        ArrayList<Task> taskArrayList = new ArrayList<>();
 
         // 後でTaskクラスに変更する
-
+/*
         ArrayList<String> taskArrayList = new ArrayList<>();
         taskArrayList.add("aaa");
         taskArrayList.add("bbb");
         taskArrayList.add("ccc");
+*/
 
-/*
         for (int i = 0; i < mTaskRealmResults.size(); i++) {
             if (!mTaskRealmResults.get(i).isValid()) continue;
 
@@ -107,7 +107,6 @@ public class TaskActivity extends AppCompatActivity {
         mListView.setAdapter(mTaskAdapter);
         mTaskAdapter.notifyDataSetChanged();
 
-*/
 
     }
 
