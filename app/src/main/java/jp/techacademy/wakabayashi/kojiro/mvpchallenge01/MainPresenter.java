@@ -21,14 +21,16 @@ public class MainPresenter {
 
     public void startDivination(){
         mView.showProgress();
+
         mDivinationManager.get(new DivinationManager.DivinationDelegate(){
             @Override
             public void completeDivination(String result){
                 mView.setResultText(result);
                 mView.dismissProgress();
+                mView.settoast();
             }
-
         });
+
     }
 
 }

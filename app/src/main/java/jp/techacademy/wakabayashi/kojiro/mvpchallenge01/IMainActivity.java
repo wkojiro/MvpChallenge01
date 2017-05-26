@@ -9,6 +9,5 @@ public interface IMainActivity {
     void showProgress();
     void dismissProgress();
     void setResultText(String result);
-
-
+    void settoast();
 }

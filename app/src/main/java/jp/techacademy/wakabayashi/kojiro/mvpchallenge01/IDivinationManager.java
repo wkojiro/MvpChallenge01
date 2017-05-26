@@ -6,7 +6,9 @@ package jp.techacademy.wakabayashi.kojiro.mvpchallenge01;
 
 public interface IDivinationManager {
 
+    void get(DivinationManager.DivinationDelegate divinationDelegate);
 
 
-    void get(DivinationManager.DivinationDelegate delegate);
+
+
 }
