@@ -16,10 +16,12 @@ import io.realm.RealmResults;
 
 import jp.techacademy.wakabayashi.kojiro.mvpchallenge01.R;
 import jp.techacademy.wakabayashi.kojiro.mvpchallenge01.addedittask.AddEditTaskActivity;
+
+import jp.techacademy.wakabayashi.kojiro.mvpchallenge01.addedittask.AddEditTaskPresenter;
 import jp.techacademy.wakabayashi.kojiro.mvpchallenge01.data.Task;
 
 
-public class TaskActivity extends AppCompatActivity {
+public class TaskActivity extends AppCompatActivity  {
 
     /* Realm 関連　*/
     private Realm mRealm;
@@ -36,13 +38,18 @@ public class TaskActivity extends AppCompatActivity {
     private TaskAdapter mTaskAdapter;
     private FloatingActionButton fab;
 
-
+    private TaskPresenter mPresenter;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_task);
+
+        mPresenter = new TaskPresenter();
+
+
+
 
     fab = (FloatingActionButton) findViewById(R.id.fab);
     fab.setOnClickListener(new View.OnClickListener() {

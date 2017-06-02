@@ -10,14 +10,12 @@ public interface AddEditTaskContract {
 
     void showProgress();
     void dismissProgress();
-    void setTitle(String title);
-    void setDescription(String description);
 
-
+/*
     interface Presenter {
         void saveTask(String title, String description);
     }
 
-
+*/
 
 }

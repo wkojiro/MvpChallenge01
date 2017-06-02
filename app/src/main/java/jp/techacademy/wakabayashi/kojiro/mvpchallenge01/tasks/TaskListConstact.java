@@ -5,4 +5,10 @@ package jp.techacademy.wakabayashi.kojiro.mvpchallenge01.tasks;
  */
 
 public interface TaskListConstact {
+
+    void showProgress();
+    void dismissProgress();
+    void showAddEditTask();
+    void reloadTask();
+
 }

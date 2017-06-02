@@ -57,14 +57,5 @@ public class AddEditTaskActivity extends AppCompatActivity implements AddEditTas
         mProgress.dismiss();
     }
 
-    @Override
-    public void setTitle(String title) {
-
-    }
-
-    @Override
-    public void setDescription(String description) {
-
-    }
 
 }
